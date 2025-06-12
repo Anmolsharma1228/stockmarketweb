@@ -2,7 +2,9 @@ import React from 'react'
 
 const Market = () => {
   return (
-    <div>Market</div>
+    <div className='text-white my-14'>
+      <p>No Data Here ?</p>
+    </div>
   )
 }
 

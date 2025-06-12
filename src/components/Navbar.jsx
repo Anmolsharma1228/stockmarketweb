@@ -8,11 +8,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white w-full fixed top-0 right-0 left-0 rounded shadow-md shadow-black container mx-auto z-10">
+    <header className="bg-white w-full fixed top-0 right-0 left-0 rounded shadow-md shadow-black container mx-auto z-10 py-4">
       <nav className="flex justify-between sm:justify-between items-center mx-4">
         <div className="">
           <NavLink to="#" className="">
-            <img src={logo1} className="w-[70px] rounded-full" />
+            {/* <img src={logo1} className="w-[70px] rounded-full" /> */}
+            <p className="font-serif font-semibold">BEHIND THE</p>
+            <p className=" text-xl font-serif font-semibold text-center text-slate-400">PROFIT</p>
           </NavLink>
         </div>
         <div className="sm:hidden text-[20px]">
