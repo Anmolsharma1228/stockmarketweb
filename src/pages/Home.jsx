@@ -10,28 +10,29 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="min-h-screen bg-gradient-to-b from-[#376173] to-[#1c3540] flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 pt-32 pb-10">
-        {/* Left Content */}
-        <div className="text-center md:text-left space-y-4 md:space-y-6 md:mt-0">
-          <h1 className="font-jost text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-snug">
-            Welcome to Fintaxion
-            <br />
-            Consulting!
-          </h1>
-          <p className="text-lg md:text-xl font-medium text-gray-300">
-            Financial | Taxation | Business Advisory
-          </p>
-        </div>
+      <div className="min-h-screen bg-gradient-to-b from-[#376173] to-[#1c3540] flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 pt-10 md:pt-24 pb-10">
+  {/* Left Content */}
+  <div className="text-center md:text-left space-y-4 md:space-y-6 md:mt-0">
+    <h1 className="font-jost text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-snug">
+      Welcome to Fintaxion
+      <br />
+      Consulting!
+    </h1>
+    <p className="text-lg md:text-xl font-medium text-gray-300">
+      Financial | Taxation | Business Advisory
+    </p>
+  </div>
 
-        {/* Right Image */}
-        <div className="flex justify-center mb-6 md:mb-0">
-          <img
-            src={taxmin}
-            alt="Taxmin"
-            className="sm:w-80 md:w-[450px] lg:w-[550px] rounded-2xl shadow-2xl transition-transform duration-300 hover:scale-105"
-          />
-        </div>
-      </div>
+  {/* Right Image */}
+  <div className="flex justify-center mb-6 md:mb-0">
+    <img
+      src={taxmin}
+      alt="Taxmin"
+      className="sm:w-80 md:w-[450px] lg:w-[550px] rounded-2xl shadow-2xl transition-transform duration-300 hover:scale-105"
+    />
+  </div>
+</div>
+
 
       {/* About Us Section */}
       <section className="py-12 bg-white">
