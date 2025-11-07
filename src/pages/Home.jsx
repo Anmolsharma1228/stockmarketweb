@@ -8,9 +8,9 @@ import ContactUs from "../pages/ContactUs.jsx";
 
 const Home = () => {
   return (
-    <>
+    <div>
       {/* Hero Section */}
-      <div className="min-h-screen bg-gradient-to-b from-[#376173] to-[#1c3540] flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 pt-32 pb-10">
+      <div className="sm:min-h-screen bg-gradient-to-b from-[#376173] to-[#1c3540] flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 pt-32 pb-10">
         {/* Left Content */}
         <div className="text-center md:text-left space-y-4 md:space-y-6 md:mt-0">
           <h1 className="font-jost text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-snug">
@@ -55,7 +55,7 @@ const Home = () => {
       <section className="py-12">
         <ContactUs />
       </section>
-    </>
+    </div>
   );
 };
 
