@@ -1,96 +1,117 @@
 import React, { useState } from "react";
+import logo from "../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
-import logo1 from "../assets/logo1.avif";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white w-full fixed top-0 right-0 left-0 rounded shadow-md shadow-black container mx-auto z-10 py-4">
-      <nav className="flex justify-between sm:justify-between items-center mx-4">
+    <header className="bg-[#376173] w-full fixed top-0 right-0 left-0 mx-auto z-10 py-4">
+      <nav className="flex justify-between sm:justify-between items-center mx-5 sm:mx-10">
         <div className="">
           <NavLink to="#" className="">
-            {/* <img src={logo1} className="w-[70px] rounded-full" /> */}
-            <p className="font-serif font-semibold">BEHIND THE</p>
-            <p className=" text-xl font-serif font-semibold text-center text-slate-400">PROFIT</p>
+            <img src={logo} className="w-[70px] rounded-full" />
           </NavLink>
         </div>
-        <div className="sm:hidden text-[20px]">
+        <div className="sm:hidden text-[22px] text-white">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <ImCross /> : <FaBars />}
           </button>
         </div>
-        <div className="md:space-x-6 lg:text-[18px] hidden md:block">
+        <div className="md:space-x-6 lg:text-[16px] hidden md:block">
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive
-                ? "text-indigo-700 hover:text-indigo-700 duration-500"
-                : "text-gray-500"
+              isActive ? "text-[#47B2E4]" : "text-white"
             }
           >
             Home
           </NavLink>
           <NavLink
-            to="/Market"
+            to="/Aboutus"
             className={({ isActive }) =>
-              isActive
-                ? "text-indigo-700 hover:text-indigo-700 duration-500"
-                : "text-gray-500"
+              isActive ? "text-[#47B2E4]" : "text-white"
             }
           >
-            Market Activity
+            About Us
           </NavLink>
           <NavLink
             to="/News&insight"
             className={({ isActive }) =>
-              isActive
-                ? "text-indigo-700 hover:text-indigo-700 duration-500"
-                : "text-gray-500"
+              isActive ? "text-[#47B2E4]" : "text-white"
             }
           >
-            News & insight
+            Services
           </NavLink>
-          {/* <NavLink to="#" className="hover:text-indigo-700 duration-500">
-            Solution
-          </NavLink> */}
+
           <NavLink
-            to="/About"
+            to="/OurTeam"
             className={({ isActive }) =>
-              isActive
-                ? "text-indigo-700 hover:text-indigo-700 duration-500"
-                : "text-gray-500"
+              isActive ? "text-[#47B2E4]" : "text-white"
             }
           >
-            About
+            Our Team
           </NavLink>
-        </div>
-        <div className="space-x-4 lg:text-[20px] text-[17px] hidden sm:block">
-          <input
-            type="search"
-            placeholder="Search here..."
-            className="px-2 border-2"
-          />
+          <NavLink
+            to="/ContactUs"
+            className={({ isActive }) =>
+              isActive ? "text-[#47B2E4]" : "text-white"
+            }
+          >
+            Contact Us
+          </NavLink>
+          <NavLink to="/About">
+            <button className="bg-[#3C3D3D] p-[8px] rounded-full text-white border ">
+              Request a Quote
+            </button>
+          </NavLink>
         </div>
       </nav>
       {isOpen && (
-        <div className="ml-6 flex flex-col items-start justify-start space-y-2 py-2 lg:text-[18px] sm:hidden">
-  <NavLink to="/" className="hover:text-indigo-700 duration-500">
-    Home
-  </NavLink>
-  <NavLink to="/" className="hover:text-indigo-700 duration-500">
-    Market Activity
-  </NavLink>
-  <NavLink to="/News&insight" className="hover:text-indigo-700 duration-500">
-    News & insight
-  </NavLink>
-  <NavLink to="/About" className="hover:text-indigo-700 duration-500">
-    About
-  </NavLink>
-</div>
-
+        <div className="mt-6 ml-7 flex flex-col items-start justify-start space-y-2 py-2 lg:text-[18px] sm:hidden">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-[#47B2E4]" : "text-white"
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/About Us"
+            className={({ isActive }) =>
+              isActive ? "text-[#47B2E4]" : "text-white"
+            }
+          >
+            About Us
+          </NavLink>
+          <NavLink
+            to="/Services"
+            className={({ isActive }) =>
+              isActive ? "text-[#47B2E4]" : "text-white"
+            }
+          >
+            Services
+          </NavLink>
+          <NavLink
+            to="/OurTeam"
+            className={({ isActive }) =>
+              isActive ? "text-[#47B2E4]" : "text-white"
+            }
+          >
+            Our Team
+          </NavLink>
+          <NavLink
+            to="/ContactUs"
+            className={({ isActive }) =>
+              isActive ? "text-[#47B2E4]" : "text-white"
+            }
+          >
+            Contact Us
+          </NavLink>
+        </div>
       )}
     </header>
   );

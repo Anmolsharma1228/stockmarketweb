@@ -1,3 +1,0 @@
-export const PRODUCTS = 'PRODUCTS';
-export const AMOZONPRODUCT = 'AMOZONPRODUCT';
-export const ELECTRONIC = 'ELECTRONIC';

@@ -1,68 +1,61 @@
 import { Link } from "react-router-dom";
-import { FaFacebook } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { GrLocation } from "react-icons/gr";
-import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaSquareWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { IoMdMailOpen } from "react-icons/io";
-import { FaXTwitter } from "react-icons/fa6";
+import { GrLocation } from "react-icons/gr";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10 w-[450px] sm:w-full">
-      <div className="px-4 sm:px-6 md:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <footer className="bg-[#F5F6F8] text-[#444444] py-10 w-full font-jost">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 flex flex-col sm:flex-row flex-wrap justify-between gap-10">
         
         {/* About Section */}
-        <div>
-          <h3 className="text-lg font-semibold mb-2">BEHIND THE PROFIT</h3>
-          <p className="text-sm text-gray-300">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text since the 1500s.
+        <div className="space-y-4 sm:w-[45%]">
+          <h3 className="text-[28px] sm:text-[32px] font-semibold text-[#37517E]">Fintaxion</h3>
+          <p className="text-sm leading-relaxed">
+            <span className="inline-flex items-center gap-2">
+              <GrLocation className="text-lg" /> 
+              201 DSIDC Shed, Okhla Industrial Area, Phase-I, New Delhi – 1100202
+            </span>
+          </p>
+          <p className="flex items-start gap-2">
+            <FaPhoneSquareAlt className="text-xl mt-1" />
+            <span>
+              Hemant Singh (+91-8178363761)<br />
+              Vijay Pal (+91-7042067976)
+            </span>
+          </p>
+          <p className="flex items-center gap-2">
+            <IoMdMailOpen className="text-xl" /> info@fintaxion.in
           </p>
         </div>
 
-        {/* Useful Links */}
-        <div>
-          <h3 className="text-lg font-semibold mb-2">USEFUL LINKS</h3>
-          <div className="flex flex-col gap-2 text-sm">
-            <Link to="/" className="hover:text-red-500">Home</Link>
-            <Link to="/Market" className="hover:text-red-500">Market Activity</Link>
-            <Link to="/News&insight" className="hover:text-red-500">News & Insight</Link>
-            <Link to="/About" className="hover:text-red-500">About</Link>
-          </div>
-        </div>
-
-        {/* Social Media */}
-        <div>
-          <h3 className="text-lg font-semibold mb-2">SOCIAL MEDIA</h3>
-          <div className="flex gap-4 text-2xl mt-2">
-            <Link to="#"><FaInstagram className="hover:text-pink-500" /></Link>
-            <Link to="#"><FaFacebook className="hover:text-blue-500" /></Link>
-            <Link to="#"><FaXTwitter className="hover:text-blue-400" /></Link>
-            <Link to="#"><FaSquareWhatsapp className="hover:text-green-500" /></Link>
-          </div>
-        </div>
-
-        {/* Contact Info */}
-        <div>
-          <h3 className="text-lg font-semibold mb-2">CONTACT</h3>
-          <div className="flex items-start gap-2 text-sm mb-2">
-            <GrLocation className="mt-1" />
-            <p>New Delhi - 110044</p>
-          </div>
-          <div className="flex items-start gap-2 text-sm mb-2">
-            <IoMdMailOpen className="mt-1" />
-            <p>behindtheprofit@gmail.com</p>
-          </div>
-          <div className="flex items-start gap-2 text-sm">
-            <FaPhoneSquareAlt className="mt-1" />
-            <p>+012456789</p>
+        {/* Social Media Section */}
+        <div className="sm:w-[45%]">
+          <h3 className="text-lg font-semibold mb-3 text-[#37517E]">Follow Us</h3>
+          <p className="text-sm mb-3">
+            Follow us on social media for updates, tips, and more!
+          </p>
+          <div className="flex gap-4 text-2xl">
+            <Link to="#" className="hover:text-pink-500 transition-colors duration-300">
+              <FaInstagram />
+            </Link>
+            <Link to="#" className="hover:text-blue-600 transition-colors duration-300">
+              <FaFacebook />
+            </Link>
+            <Link to="#" className="hover:text-black transition-colors duration-300">
+              <FaXTwitter />
+            </Link>
+            <Link to="#" className="hover:text-green-500 transition-colors duration-300">
+              <FaSquareWhatsapp />
+            </Link>
           </div>
         </div>
       </div>
 
       {/* Bottom Text */}
-      <div className="text-center mt-8 text-sm text-gray-400">
-        © {new Date().getFullYear()} Behind The Profit. All rights reserved.
+      <div className="text-center mt-10 text-sm border-t border-gray-300 pt-4 text-[#444444]">
+        © {new Date().getFullYear()} Fintaxion Consulting. All Rights Reserved.
       </div>
     </footer>
   );

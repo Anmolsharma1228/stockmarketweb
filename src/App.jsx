@@ -1,4 +1,5 @@
 import MainRoute from "./route/MainRoute"
+import "@fontsource/jost";
 import React from "react"
 // import './App.css'
 // import './index.css'
