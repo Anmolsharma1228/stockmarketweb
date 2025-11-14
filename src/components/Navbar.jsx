@@ -41,49 +41,49 @@ const Navbar = () => {
             {/* Dropdown */}
             <div className="absolute hidden group-hover:block bg-white text-[#444444] mt-2 rounded-lg shadow-lg min-w-[250px]">
               <NavLink
-                to="/WebDevelopment"
+                to="/Services/ITRS"
                 className="block px-4 py-2 hover:bg-[#47B2E4] transition-all duration-200"
               >
                 All Kinds of ITRs
               </NavLink>
               <NavLink
-                to="/AppDevelopment"
+                to="/Services/GSTreg"
                 className="block px-4 py-2 hover:bg-[#47B2E4] transition-all duration-200"
               >
                 GST Registrations & Returns
               </NavLink>
               <NavLink
-                to="/DigitalMarketing"
+                to="/Services/TDS"
                 className="block px-4 py-2 hover:bg-[#47B2E4] transition-all duration-200"
               >
                 TDS Returns
               </NavLink>
               <NavLink
-                to="/SEO"
+                to="/Services/MSME"
                 className="block px-4 py-2 hover:bg-[#47B2E4] transition-all duration-200"
               >
                 MSME Registrations
               </NavLink>
                <NavLink
-                to="/SEO"
+                to="/Services/DigitalSig"
                 className="block px-4 py-2 hover:bg-[#47B2E4] transition-all duration-200"
               >
                 Digital Signatures
               </NavLink>
                <NavLink
-                to="/SEO"
+                to="/Services/ESICreg"
                 className="block px-4 py-2 hover:bg-[#47B2E4] transition-all duration-200"
               >
                 ESIC Registration & Return
               </NavLink>
                <NavLink
-                to="/SEO"
+                to="/Services/StartUpReg"
                 className="block px-4 py-2 hover:bg-[#47B2E4] transition-all duration-200"
               >
                 Startup Registrations
               </NavLink>
                <NavLink
-                to="/SEO"
+                to="/Services/AllRoc"
                 className="block px-4 py-2 hover:bg-[#47B2E4] transition-all duration-200"
               >
                 All ROC Related Work
