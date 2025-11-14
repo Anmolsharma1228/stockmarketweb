@@ -37,7 +37,7 @@ const Footer = () => {
             Follow us on social media for updates, tips, and more!
           </p>
           <div className="flex gap-4 text-2xl">
-            <Link to="#" className="hover:text-pink-500 transition-colors duration-300">
+            <Link to="https://www.instagram.com/fintaxion_consulting?utm_source=qr&igsh=YXN0d3JzOXFzc3ll" className="hover:text-pink-500 transition-colors duration-300">
               <FaInstagram />
             </Link>
             <Link to="#" className="hover:text-blue-600 transition-colors duration-300">
@@ -46,7 +46,7 @@ const Footer = () => {
             <Link to="#" className="hover:text-black transition-colors duration-300">
               <FaXTwitter />
             </Link>
-            <Link to="#" className="hover:text-green-500 transition-colors duration-300">
+            <Link to="https://wa.me/qr/KDII4Q47RDRSB1" className="hover:text-green-500 transition-colors duration-300">
               <FaSquareWhatsapp />
             </Link>
           </div>
