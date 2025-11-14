@@ -34,19 +34,19 @@ const Home = () => {
       </div>
 
       {/* About Us Section */}
-      <section className="py-12 bg-white">
+      {/* <section className="py-12 bg-white">
         <AboutUs />
-      </section>
+      </section> */}
 
       {/* Services Section */}
       <section className="py-12">
         <Services />
       </section>
 
-      {/* Our Team Section */}
+      {/* Our Team Section
       <section className="sm:py-12 bg-white">
         <OurTeam />
-      </section>
+      </section> */}
       {/* Subscribe */}
       <section className="py-12">
         <Subscribe />

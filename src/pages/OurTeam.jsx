@@ -17,7 +17,7 @@ const OurTeam = () => {
   ];
 
   return (
-    <section className="px-4">
+    <section className="px-4 sm:mt-36 mb-12 mt-32">
       {/* Heading */}
       <div className="text-center space-y-4 max-w-4xl mx-auto">
         <h1 className="text-[32px] md:text-4xl font-black text-[#37517E] font-jost">

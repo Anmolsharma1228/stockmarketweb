@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <section className="px-6 font-jost">
+    <section className="px-6 font-jost mb-12">
         <h1 className="text-center text-[32px] md:text-4xl font-black text-[#37517E] font-jost">CONTACT</h1>
          {/* Line Always Visible */}
           <span className="block w-24 h-[3px] mx-auto mt-2 bg-[#444444] rounded-full"></span>

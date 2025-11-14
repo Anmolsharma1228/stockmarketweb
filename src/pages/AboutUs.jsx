@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <section className="sm:my-20 px-4">
+    <section className="sm:mt-36 mb-12 mt-32 px-4">
       {/* Heading */}
       <div className="text-center my-10">
         <h1 className="text-3xl md:text-4xl font-extrabold text-[#37517E] font-jost inline-block relative">
